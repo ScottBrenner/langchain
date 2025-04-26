@@ -1,4 +1,4 @@
-import toml
+import os, toml
 
 pyproject_toml = toml.load("pyproject.toml")
 
