@@ -24,7 +24,7 @@ jobs:
       - name: Extract Ignore Words List
         run: |
           # Use a Python script to extract the ignore words list from pyproject.toml
-          python .github/workflows/extract_ignored_words_list.py
+          python .github/workflows/extract_ignored_words_list.py >> $GITHUB_OUTPUT
         id: extract_ignore_words
 
       - name: Codespell
