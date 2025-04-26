@@ -7,4 +7,4 @@ ignore_words_list = (
     pyproject_toml.get("tool", {}).get("codespell", {}).get("ignore-words-list")
 )
 
-print(ignore_words_list)
+print(list(ignore_words_list))
